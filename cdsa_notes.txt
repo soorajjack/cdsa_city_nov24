@@ -2,5 +2,10 @@ CDSA and Problem solving training (10 days) City Engg College, Blr
 
 DAY1 MONDAY 04-11-2024
 
+Git commands:
+git status  # 
+git add .
+git commit -m "relavent msg"
+git push origin main
 
 
