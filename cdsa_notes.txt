@@ -284,6 +284,88 @@ Find the smallest digit in a number.
 Find the number of Even digits in a number.
 Find sum of digits in a number.
 Find the 2nd smallest digit in a number.
+9. Accept a number and find sum of digits of the number
+10.Accept a number and find count the number of digits in it.
+11.Accept a number and find biggest/smallest digit in the number
+12.Find sum of Even/Odd digits in the number
+13.Find the frequency of a digit in the number
+
+14.Find sum of Odd placed Even digits in the number
+15.Find 2nd smallest digit in the number
+16.Accept a number from user and find her lucky digit, where the lucky digit is found by finding sum of the digits of the number until a sigle digit number is reached. Thus if the sum is not a single digit number, apply the logic of finding sum of the digits on it.
+
+HOW TO SOLVE A PROBLEM
+
+1. Understand the problem. Recognise the required data (I/P). Isolate/remove the unwanted information and data. Focus on the relevant information. Accertain what should be the O/P.
+Outcome: We know the I/P, O/P and the relevant information
+
+2. Build the solution using trial and error technique or mathematical formula or using a specific Algorithm. In this step we must not even think of programming.
+OutCome: We know the what is the solution(s)
+
+3. Write the Algorithm. Every step of the algorithm must be simple, unambigious and finite.
+OutCome: We have a clear visible solution as a procedure
+
+4. Write the Fake-code (Pseudocode) 
+OutCome: You have a solution that looks like a code
+
+5. Code it (via the languiage syntax)
+
+6. Good coding practices, naming standards, documentation, unit-testing
+
+7. Efficiency of algorithms, Optimization, development, DEvOps, Cyber Security, Installation, Maintainance
+-------------------------------------------------
+i/p: +ve integer  3457
+o/P: sum of digits of the number 19
+info: i/p num is +ve int
+
+We find that, getting the left most digit is impossible until unless we know the number of digits in the number.
+
+However, we can get the unit place digit from any number by dividing it by 10 and getting the remainder
+
+10) 3457 (345
+	3450
+	   7
+Thus, when we divide a number by 10 and do integer division (quotient is always int), as if we seperate/pluck/copy the remainder digit from the given number.
+
+Now we also observe that the quotient has not got the remainder digit.
+
+Thus, repeat the process on the quotient every time until we get Zero.
 
 
+1. Read N
+2. sumOfDigits = 0
+3. while N > 0 do:
+	 remainderDigit = N % 10 // copy the last digit
+	 N = N / 10 // remove the last digit from N
+	 sumOfDigits = sumOfDigits + remainderDigit
+4. print sumOfDigits as O/P
 
+N = 679
+s = 0
+while 679 > 0   // i=1
+	r = 679 % 10 = 9
+	N = 679 / 10 = 67
+	s = 0 + 9 = 9
+while 67 > 0   // i=2
+	r = 67 % 10 = 7
+	N = 67 / 10 = 6
+	s = 9 + 7 = 16
+while 6 > 0    // i=3
+	r = 6 % 10 = 6
+	N = 6 / 10 = 0
+	s = 16 + 6 = 22
+while 0 > 0  // i=4 There is no 4th iteration
+
+int main() {
+	int inputNumber = 0, remainderDigit = 0, sumOfDigits = 0, tempNumber = 0;
+	puts("Enter a number (+ve integer) to find sum of its digits");
+	scanf("%d", &inputNumber);
+	tempNumber = inputNumber;
+	while(inputNumber > 0) {
+		remainderDigit = inputNumber % 10;
+		sumOfDigits += remainderDigit;
+		inputNumber = inputNumber / 10;
+	}
+	printf("Sum of digits of %d is %d", tempNumber, sumOfDigits);
+	return 0;
+}
