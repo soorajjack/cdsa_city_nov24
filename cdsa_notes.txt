@@ -472,7 +472,21 @@ Print Fibo series of N terms
 Print Nth Fibo term
 Check if a number is Prime
 Find Nth Prime number
+-------------------------------------
+DAY4 THURSDAY 07-01-2024
 
+Below link is: 
+How To Keep Applications Organised In Your Computer
+https://www.youtube.com/watch?v=SY1UNqOwabo
 
-   
+How To Sync Files Between GitHub And VS Code ?
+https://www.youtube.com/watch?v=EWttNzNBqBc
+
+How To Use GitHub And Create New Repository
+https://www.youtube.com/watch?v=h5Xr9_L4x7M
+
+App Installations for learning Web App Development and GitHub
+https://www.youtube.com/watch?v=B3s3WT-05H0&t=49s
+----------------------------------------------------------------
+
 
