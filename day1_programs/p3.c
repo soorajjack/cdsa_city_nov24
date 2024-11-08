@@ -29,6 +29,20 @@ int main()
             default:
                 puts("We dont serve Grass Sir");
             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
         case 'n':
             puts("1:Mutton-pulav 2:Chicken-chilly 3:Fish-fry. Your choice plz");
             scanf("%d", &choice);
