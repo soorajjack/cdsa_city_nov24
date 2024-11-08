@@ -743,3 +743,31 @@ Assignments:
 1. Find frequency of a number in an array
 1. Remove duplicates from an array
 
+STRINGS:
+
+string handling functions
+string.h
+
+int strlen(const char*);
+
+int strLen(const char* ptr) {
+}
+
+int strLen(const char ptr[]) {
+}
+
+int strLen(const char ptr[10]) {
+}
+
+char* strcpy(char*, const char*)
+
+char* strcat(char*, const char*)
+
+int strcmp(const char*, const char*)
+
+int stricmp(const char*, const char*)
+
+char* strrev(char*)
+
+strstr()
+strtok()
